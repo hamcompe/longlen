@@ -16,12 +16,20 @@ class MyDocument extends Document {
             body {
               line-height: 1.5;
               font-size: 16px;
+              *::selection {
+                background: #0029ff;
+                color: #fff;
+              }
             }
           `}
         />
         <Head>
           <title>🤘longlen</title>
         </Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Source+Serif+Pro"
+          rel="stylesheet"
+        />
         <body className="custom_class">
           <Main />
           <NextScript />
