@@ -81,7 +81,7 @@ function SubscribeCard({
 }) {
   return (
     <div css={css``}>
-      <img
+      {/* <img
         src="/static/circle.svg"
         alt="background"
         css={css`
@@ -91,7 +91,7 @@ function SubscribeCard({
           right: -300px;
           top: -300px;
         `}
-      />
+      /> */}
       <div
         css={css`
           background: #fff;

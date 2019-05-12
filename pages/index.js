@@ -37,6 +37,7 @@ function HeroSection() {
           <div
             css={css`
               max-width: 580px;
+              margin-bottom: 80px;
             `}
           >
             <h1
@@ -68,9 +69,49 @@ function HeroSection() {
   )
 }
 
+const MenuLine = styled.span`
+  width: 24px;
+  height: 2px;
+  background: #333;
+  margin: 4px 0;
+  transition: 0.3s all ease-in-out;
+`
+const firstLineOpenStyle = ({ isOpen }) => isOpen
+  && css`
+    transform: translateY(5px) rotate(45deg);
+  `
+const secondLineOpenStyle = ({ isOpen }) => isOpen
+  && css`
+    transform: translateY(-5px) rotate(-45deg);
+  `
+const FirstLine = styled(MenuLine)`
+  ${firstLineOpenStyle}
+`
+const SecondLine = styled(MenuLine)`
+  ${secondLineOpenStyle}
+`
+const Button = styled.button`
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s all ease-in-out;
+  background: none;
+  border: none;
+`
+function MenuButton() {
+  const [isOpen, setOpen] = React.useState(false)
+
+  const toggleOpen = () => setOpen(!isOpen)
+  return (
+    <Button type="button" onClick={toggleOpen} isOpen={isOpen}>
+      <FirstLine isOpen={isOpen} />
+      <SecondLine isOpen={isOpen} />
+    </Button>
+  )
+}
+
 function Navbar() {
   return (
-    <div
+    <nav
       css={css`
         display: flex;
         align-items: center;
@@ -123,15 +164,28 @@ function Navbar() {
                 contact
               </div>
             </li>
+            <li>
+              <MenuButton />
+            </li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   )
 }
 
 export default props => (
-  <div css={css``}>
+  <div
+    css={css`
+      background-image: url('/static/circle.svg');
+      background-position: right -300px top -300px;
+      min-height: 100vh;
+
+      @media (max-width: 1100px) {
+        background-position: right -300px top 350px;
+      }
+    `}
+  >
     <Navbar />
     <HeroSection {...props} />
   </div>
