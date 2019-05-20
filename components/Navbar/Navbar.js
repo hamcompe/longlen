@@ -1,6 +1,6 @@
 import { css } from '@emotion/core'
 import { MenuButton } from './MenuButton'
-import { containerPadding } from '../pattern'
+import { containerPadding, navbarHeight } from '../pattern'
 
 const containerSize = 1200
 
@@ -48,7 +48,7 @@ export function Navbar() {
       css={css`
         display: flex;
         align-items: center;
-        min-height: 100px;
+        min-height: ${navbarHeight};
         padding: 0 ${containerPadding};
       `}
     >

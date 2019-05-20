@@ -6,9 +6,7 @@ import {
 } from '../components/Box/Box'
 import { Typo } from '../components/Typo'
 import { Navbar } from '../components/Navbar/Navbar'
-import { containerPadding } from '../components/pattern'
-
-const navbarHeight = 100
+import { containerPadding, navbarHeight } from '../components/pattern'
 
 const HeroContent = () => (
   <Box
@@ -34,7 +32,7 @@ function HeroSection() {
       <SiteWrapper>
         <Stack
           css={css`
-            height: calc(100vh - ${navbarHeight}px);
+            height: calc(100vh - ${navbarHeight});
             max-height: 640px;
           `}
         >
