@@ -11,6 +11,6 @@ export default () => (
   <React.Fragment>
     <Navbar />
     <HeroSection />
-    <SubscribeSection />
+    <SubscribeSection id="ux-subscribe" />
   </React.Fragment>
 )

@@ -3,9 +3,10 @@ import { Box } from '../Box/Box'
 import { Typo } from '../Typo'
 import { containerPadding } from '../pattern'
 
-export function SubscribeSection() {
+export function SubscribeSection({ id }) {
   return (
-    <div
+    <section
+      id={id}
       css={css`
         display: flex;
         justify-content: center;
@@ -48,7 +49,6 @@ export function SubscribeSection() {
           </div>
           <button
             css={css`
-              font-family: 'Source Serif Pro', serif;
               border: none;
               background: #fff;
               border: 2px solid #000;
@@ -59,10 +59,10 @@ export function SubscribeSection() {
             `}
             type="submit"
           >
-            I’M IN
+            JOIN WAITING LIST
           </button>
         </form>
       </Box>
-    </div>
+    </section>
   )
 }

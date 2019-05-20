@@ -18,6 +18,7 @@ class MyDocument extends Document {
               html,
               body {
                 line-height: 1.5;
+                font-family: 'Source Serif Pro', serif;
                 font-size: 16px;
                 *::selection {
                   background: #0029ff;

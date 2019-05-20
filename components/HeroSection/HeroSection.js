@@ -19,6 +19,13 @@ const ActionContainer = styled(Box)`
   }
 `
 
+const LinkStyle = css`
+  display: flex;
+  width: fit-content;
+  font-size: 1rem;
+  color: #666;
+  text-decoration: none;
+`
 function WhoYouAreSelectionSection() {
   return (
     <Box mt="auto">
@@ -27,8 +34,36 @@ function WhoYouAreSelectionSection() {
         <Typo context="h6">Let me help you find what you are looking for.</Typo>
       </ActionContainer>
       <Box grid gap={24}>
-        <a href="">I’m UX</a>
-        <a href="">I’m just a user</a>
+        <Box>
+          <a css={LinkStyle} href="#ux-subscribe">
+            <img
+              src="static/arrow-down.svg"
+              alt="arrow-down"
+              css={css`
+                margin-right: 20px;
+              `}
+            />
+            <div>
+              I’m a UX research
+              <br />
+              I’m looking for user
+            </div>
+          </a>
+        </Box>
+        <Box>
+          <a css={LinkStyle} href="#user-subscribe">
+            <img
+              src="static/arrow-right.svg"
+              alt="arrow-right"
+              css={css`
+                margin-right: 20px;
+              `}
+            />
+            <div>
+              I’m just a user <br /> I wanna do a test during my free-time.
+            </div>
+          </a>
+        </Box>
       </Box>
     </Box>
   )
