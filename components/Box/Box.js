@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import {
   dynamicMargin, dynamicFlex, dynamicGrid, dynamicPadding, dynamicAlign,
 } from './styles'
+import { containerPadding } from '../pattern'
 
 export const Box = styled.div`
   ${dynamicMargin};
@@ -22,10 +23,9 @@ export const Stack = styled.div`
 `
 
 const containerSize = 1200
-const containerPadding = 20
 
 export const SiteContainer = styled.div`
-  padding: 0 ${containerPadding}px;
+  padding: 0 ${containerPadding};
 `
 export const SiteWrapper = styled.div`
   max-width: ${containerSize}px;

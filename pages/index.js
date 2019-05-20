@@ -6,6 +6,7 @@ import {
 } from '../components/Box/Box'
 import { Typo } from '../components/Typo'
 import { Navbar } from '../components/Navbar/Navbar'
+import { containerPadding } from '../components/pattern'
 
 const navbarHeight = 100
 
@@ -85,7 +86,7 @@ function SubscribeSection() {
       css={css`
         display: flex;
         justify-content: center;
-        padding: 60px 20px;
+        padding: 60px ${containerPadding};
         background: #f8f8f8;
       `}
     >

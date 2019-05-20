@@ -23,6 +23,9 @@ class MyDocument extends Document {
                   background: #0029ff;
                   color: #fff;
                 }
+                @media screen and (max-width: 620px) {
+                  font-size: 14px;
+                }
               }
             `}
           />

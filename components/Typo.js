@@ -5,20 +5,20 @@ import { colors } from './colors'
 export const Typo = ({ context, children, ...props }) => {
   const h1 = () => css`
     font-family: 'Source Serif Pro', serif;
-    font-size: 48px;
+    font-size: 3rem;
     color: ${colors.textPrimary};
     font-weight: 400;
     margin: 0;
   `
   const h2 = () => css`
     font-family: 'Source Serif Pro', serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: ${colors.textSecondary};
     font-weight: 400;
   `
   const h3 = () => css`
     font-family: 'Source Serif Pro', serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     color: ${colors.textPrimary};
     font-weight: 600;
   `
