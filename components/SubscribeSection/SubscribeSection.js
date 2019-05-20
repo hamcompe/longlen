@@ -2,6 +2,8 @@ import { css } from '@emotion/core'
 import { Box } from '../Box/Box'
 import { Typo } from '../Typo'
 import { containerPadding } from '../pattern'
+import { Button } from '../Button'
+import { Input } from '../Input'
 
 export function SubscribeSection({ id }) {
   return (
@@ -36,31 +38,10 @@ export function SubscribeSection({ id }) {
               margin-right: 1rem;
             `}
           >
-            <input
-              css={css`
-                font-family: 'Source Serif Pro', serif;
-                height: 2.625rem;
-                padding: 0.25em 1em;
-              `}
-              placeholder="email"
-              type="email"
-            />
+            <Input placeholder="email" type="email" />
             <span>we won’t ever spam you</span>
           </div>
-          <button
-            css={css`
-              border: none;
-              background: #fff;
-              border: 2px solid #000;
-              height: 100%;
-              font-size: 1rem;
-              padding: 0.25em 1em;
-              height: 2.625em;
-            `}
-            type="submit"
-          >
-            JOIN WAITING LIST
-          </button>
+          <Button type="submit">JOIN WAITING LIST</Button>
         </form>
       </Box>
     </section>
