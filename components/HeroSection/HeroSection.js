@@ -14,7 +14,7 @@ const ActionContainer = styled(Box)`
     top: 10%;
     width: 4px;
     height: 80%;
-    background: blue;
+    background: #0070ff;
   }
 `
 
@@ -68,6 +68,11 @@ function WhoYouAreSelectionSection() {
   )
 }
 
+const HeroImage = styled.img`
+  user-drag: none;
+  user-select: none;
+`
+
 const HeroContent = () => (
   <div
     css={css`
@@ -95,7 +100,7 @@ const HeroContent = () => (
         }
       `}
     >
-      <img src="static/hero-img.png" alt="hero" width="100%" />
+      <HeroImage src="static/hero-img.png" alt="hero" width="100%" />
     </picture>
     <WhoYouAreSelectionSection />
   </div>
@@ -117,7 +122,7 @@ export function HeroSection() {
               }
             `}
           >
-            <img src="static/hero-img.png" alt="hero" width="100%" />
+            <HeroImage src="static/hero-img.png" alt="hero" width="100%" />
           </picture>
         </Stack>
       </SiteWrapper>
