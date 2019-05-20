@@ -1,4 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document'
 import { keyframes, css, Global } from '@emotion/core'
 
 class MyDocument extends Document {
@@ -10,26 +12,22 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Global
-          styles={css`
-            html,
-            body {
-              line-height: 1.5;
-              font-size: 16px;
-              *::selection {
-                background: #0029ff;
-                color: #fff;
-              }
-            }
-          `}
-        />
         <Head>
-          <title>🤘longlen</title>
+          <Global
+            styles={css`
+              html,
+              body {
+                line-height: 1.5;
+                font-size: 16px;
+                *::selection {
+                  background: #0029ff;
+                  color: #fff;
+                }
+              }
+            `}
+          />
         </Head>
-        <link
-          href="https://fonts.googleapis.com/css?family=Source+Serif+Pro"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet" />
         <body className="custom_class">
           <Main />
           <NextScript />

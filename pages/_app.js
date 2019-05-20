@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import App, { Container } from 'next/app'
 import 'sanitize.css'
 
@@ -18,6 +19,9 @@ class MyApp extends App {
 
     return (
       <Container>
+        <Head>
+          <title>🤘longlen</title>
+        </Head>
         <Component {...pageProps} />
       </Container>
     )
