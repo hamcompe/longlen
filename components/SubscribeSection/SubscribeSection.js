@@ -39,7 +39,15 @@ export function SubscribeSection({ id }) {
             `}
           >
             <Input placeholder="email" type="email" />
-            <span>we won’t ever spam you</span>
+            <span
+              css={css`
+                margin-top: 4px;
+                font-size: 0.875rem;
+                color: #a1a1a1;
+              `}
+            >
+              Unsubscribe anytime
+            </span>
           </div>
           <Button type="submit">JOIN WAITING LIST</Button>
         </form>
