@@ -16,6 +16,7 @@ const SerifTypeface = css`
 const h1 = () => css`
   ${SerifTypeface};
   font-size: 3rem;
+  line-height: 1.1;
   margin-bottom: 0.5em;
   color: ${colors.textPrimary};
   font-weight: 400;
@@ -23,6 +24,7 @@ const h1 = () => css`
 const h2 = () => css`
   ${SerifTypeface};
   font-size: 1.5rem;
+  line-height: 1.4;
   margin-bottom: 1.5em;
   color: ${colors.textSecondary};
   font-weight: 400;
