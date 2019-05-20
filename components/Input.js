@@ -9,6 +9,7 @@ export const Input = styled.input`
   display: block;
   position: relative;
   width: 100%;
+  border-radius: 0;
 
   :hover {
     border-color: rgba(0, 0, 0, 0.3);

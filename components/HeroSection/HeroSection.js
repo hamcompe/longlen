@@ -69,7 +69,19 @@ function WhoYouAreSelectionSection() {
 }
 
 const HeroContent = () => (
-  <Box flex flexDirection="column" mt={80} mb={64}>
+  <div
+    css={css`
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+      margin-bottom: 64px;
+
+      @media screen and (max-width: 960px) {
+        margin-top: 40px;
+        margin-top: 32px;
+      }
+    `}
+  >
     <Typo context="h1">Find you right user</Typo>
     <Typo context="h2">
       To find user to test, it’ll no longer a big deal. No more pacnic where to find users, no more
@@ -86,7 +98,7 @@ const HeroContent = () => (
       <img src="static/hero-img.png" alt="hero" width="100%" />
     </picture>
     <WhoYouAreSelectionSection />
-  </Box>
+  </div>
 )
 
 export function HeroSection() {

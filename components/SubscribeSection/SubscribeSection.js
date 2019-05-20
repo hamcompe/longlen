@@ -49,7 +49,7 @@ export function SubscribeSection({ id }) {
               Unsubscribe anytime
             </span>
           </div>
-          <Button type="submit">JOIN WAITING LIST</Button>
+          <Button type="submit">subscribe</Button>
         </form>
       </Box>
     </section>
